@@ -1,67 +1,192 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# The Artistic Edge 🎨
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**A vibrant online art gallery platform connecting artists and enthusiasts with a modern, interactive twist.**
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+*Empowering creativity, one artwork at a time.*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📖 Project Overview
 
-## Learning Laravel
+The Artistic Edge is a dynamic web platform designed to bridge the gap between artists and art lovers. Built for accessibility and engagement, it allows artists to showcase their portfolios, users to explore stunning artworks, and communities to interact through likes, dislikes, and comments. With a responsive, visually appealing interface, it’s the ultimate digital canvas for creativity.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ✨ Key Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **Artist Portal**  
+  - Register and manage profiles with ease.  
+  - Upload, edit, or delete artworks (price, year, print type, size, edition).  
+  - Admin oversight for platform management.
 
-### Premium Partners
+- **User Portal**  
+  - Browse artist profiles and galleries without registration.  
+  - View high-resolution artworks with LightGallery’s zoom feature.  
+  - Initiate purchase inquiries via email or WhatsApp.  
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- **Community Engagement**  
+  - Like or dislike artworks with real-time counters.  
+  - Post and view comments in a sleek modal interface.  
+  - AJAX-driven interactions for a seamless experience.
 
-## Contributing
+- **Responsive Design**  
+  - Built with Bootstrap for flawless display on desktops, tablets, and mobiles.  
+  - Elegant modals for artwork details and comments.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🛠️ Technology Stack
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| **Category**       | **Technologies**                              |
+|--------------------|-----------------------------------------------|
+| **Front-End**      | HTML, CSS, Bootstrap, JavaScript, LightGallery |
+| **Back-End**       | PHP (Laravel)                                 |
+| **Database**       | MySQL                                         |
+| **Tools**          | VS Code, XAMPP, PlantUML                      |
 
-## Security Vulnerabilities
+*Styling*: Gradient backgrounds (purple to blue), Roboto font, and smooth animations for a modern aesthetic.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+---
+## Note: This project is just a prototype, it contains some validations and features missing, that's your job now to fix them, ME NO TIME  :) 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# The-Artistic-Edge
+
+## 🚀 Getting Started
+
+### Prerequisites
+- PHP >= 8.1
+- Composer
+- MySQL
+- Node.js (for npm dependencies)
+- XAMPP (for local server and database)
+
+### Installation
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/mzeeshanzafar28/the-artistic-edge.git
+   cd artistic-edge
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   composer install
+   npm install
+   ```
+
+3. **Configure Environment**
+   - Copy `.env.example` to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Update `.env` with your database credentials:
+     ```env
+     DB_CONNECTION=mysql
+     DB_HOST=127.0.0.1
+     DB_PORT=3306
+     DB_DATABASE=multan_art-gallery
+     DB_USERNAME=root
+     DB_PASSWORD=
+     ```
+
+4. **Run Migrations**
+   ```bash
+   php artisan migrate
+   ```
+
+5. **Start the Server**
+   ```bash
+   php artisan serve
+   ```
+   Access the platform at `http://localhost:8000`.
+
+---
+
+## 🎨 How It Works
+
+- **Artists**:  
+  - Register/login to access a dashboard.  
+  - Upload artworks with details (e.g., price, comment, year).  
+  - Manage portfolio and view user interactions (likes, comments).
+
+- **Users**:  
+  - Browse galleries and artist profiles without signing up.  
+  - Click artworks for LightGallery previews or modals with details.  
+  - Like, dislike, or comment (login required for interactions).  
+  - Contact artists via email or WhatsApp for inquiries.
+
+- **Admins**:  
+  - Manage artist accounts and monitor platform activities.
+
+- **Data Flow**:  
+  - Laravel controllers fetch data from MySQL.  
+  - Blade templates render responsive UI with Bootstrap.  
+  - JavaScript handles modals, LightGallery, and AJAX for reactions/comments.
+
+---
+
+## 🗺️ Entity-Relationship Diagram (ERD)
+
+
+
+**Entities**:
+- **Artist**: `Artist_ID` (PK), Name, Email, Contact, Bio, Profile_Image
+- **Artwork**: `Artwork_ID` (PK), `Artist_ID` (FK), Image_Path, Price, Comment, Year, Print, Print_Size, Edition
+- **Admin**: `Admin_ID` (PK), Username, Password
+- **ArtworkReaction**: `ID` (PK), `User_ID` (FK), `Artwork_ID` (FK), Reaction (1 for like, -1 for dislike)
+- **ArtworkComment**: `ID` (PK), `User_ID` (FK), `Artwork_ID` (FK), Comment
+
+**Relationships**:
+- Artist → Artwork (one-to-many)
+- Admin → Artist (one-to-many, administrative)
+- User → ArtworkReaction/ArtworkComment (one-to-many)
+
+---
+
+## ⚠️ Challenges & Solutions
+
+- **Modal Backdrop Conflicts**  
+  *Challenge*: Multiple modal backdrops (Bootstrap and LightGallery).  
+  *Solution*: JavaScript to remove `.modal-backdrop` and hide `.lg-backdrop` dynamically.
+
+- **Responsive Design**  
+  *Challenge*: Ensuring galleries adapt to all devices.  
+  *Solution*: Bootstrap’s grid system and media queries.
+
+- **Community Features**  
+  *Challenge*: Seamless like/dislike/comment integration.  
+  *Solution*: AJAX with Laravel controllers, unique constraints in `artwork_reactions` table.
+
+---
+
+## 🌟 Future Enhancements
+
+- User accounts for personalized galleries and saved artworks.  
+- Direct payment integration for artwork purchases.  
+- Community forums or review systems for enhanced engagement.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to make The Artistic Edge even better!  
+1. Fork the repository.  
+2. Create a feature branch (`git checkout -b feature/awesome-feature`).  
+3. Commit changes (`git commit -m 'Add awesome feature'`).  
+4. Push to the branch (`git push origin feature/awesome-feature`).  
+5. Open a pull request.
+
+---
+
+## 📚 References
+
+- [Laravel Documentation](https://laravel.com/docs)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/)
+- [LightGallery Documentation](https://www.lightgalleryjs.com/)
+- [MySQL Documentation](https://dev.mysql.com/doc/)
+
+---
+
